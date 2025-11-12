@@ -1,0 +1,26 @@
+// Problem Link : https://codeforces.com/problemset/problem/1878/A
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+   ios::sync_with_stdio(false);
+   cin.tie(nullptr);
+
+   int t; cin >> t;
+   while (t--)
+   {
+      int n, k; cin >> n >> k;
+      set<int> st;
+      for(int i = 0; i < n; i++){
+         int x; cin >> x;
+         st.insert(x);
+      }
+
+      if(st.count(k)) cout << "YES" << "\n";
+      else cout << "NO" << "\n";
+   }
+   
+
+   return 0;
+}
